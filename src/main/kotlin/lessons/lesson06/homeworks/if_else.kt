@@ -2,17 +2,22 @@ package org.example.lessons.lesson06.homeworks
 
 
 fun main() {
-
+    example1(month = 3)
+    example2(dogAge = 2.2F)
+    example3(lenght = 1.1F)
+    example4(orderAmount = 1125.25)
+    example5(fileEnd = "txt")
+    example6(temp = 32, unit = 'C')
+}
 //Задание 1: "Определение сезона"
 
 // Напишите функцию, которая на основе номера месяца распечатывает сезон года. Номера месяцев начинаются с единицы.
 fun example1(month: Int) {
-    when {
-        month in 1..2 -> println("Зима")
-        month in 3..5 -> println("Весна")
-        month in 6..8 -> println("Лето")
-        month in 9..11 -> println("Осень")
-        month == 12 -> println("Зима")
+    when (month){
+        12, 1, 2 -> println("Зима")
+        3, 4, 5 -> println("Весна")
+        6, 7, 8 -> println("Лето")
+        9, 10, 11 -> println("Осень")
         else -> println("Некорректное значение месяца")
     }
 }
@@ -35,7 +40,7 @@ fun example2(dogAge: Float) {
 // Если маршрут до 1 км - "пешком", до 5 км - "велосипед", иначе - "автотранспорт".
 fun example3(lenght: Float){
     when {
-        lenght > 0 && lenght < 1 -> println("пешком")
+        lenght > 0 && lenght < 1.0 -> println("пешком")
         lenght in 1.0..5.0 -> println("велосипед")
         lenght > 5.0 -> println("автотранспорт")
         else -> println("ТЕЛЕПОРТАЦИЯ")
@@ -62,8 +67,8 @@ fun example3(lenght: Float){
 //
 //В системе хранения документов каждый файл имеет расширение. Напишите функцию, которая на основе расширения файла
 // печатает в консоль его тип: "Текстовый документ", "Изображение", "Таблица" или "Неизвестный тип".
-fun example5(file_end: String){
-    when (file_end) {
+fun example5(fileEnd: String){
+    when (fileEnd) {
         "md", "txt", "doc", "rtf" -> println("Текстовый документ")
         "jpg", "jpeg", "gif", "png", "bmp" -> println("Изображение")
         "xls", "xlsx", "csv" -> println("Таблица")
@@ -88,5 +93,4 @@ fun example6(temp: Int, unit: Char ){
     }
 }
 
-}
 
