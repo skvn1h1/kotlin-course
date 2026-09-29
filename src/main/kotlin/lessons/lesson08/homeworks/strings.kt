@@ -1,7 +1,7 @@
 package org.example.lessons.lesson08.homeworks
 
 fun main() {
-    // Задание 1 — прогоняем все тестовые фразы из условия
+    // Задание 1
     val testPhrases = listOf(
         "Это невозможно выполнить за один день",
         "Я не уверен в успехе этого проекта",
