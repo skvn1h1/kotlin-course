@@ -104,3 +104,7 @@ fun processList(items: List<String?>) {
         println(item)
     }
 }
+
+fun main(){
+
+}
