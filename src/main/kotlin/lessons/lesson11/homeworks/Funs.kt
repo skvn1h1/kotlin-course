@@ -62,16 +62,12 @@ fun checkData(text: String?, number: Int?): Boolean? {
 // Задачи на написание кода
 // 11. Напишите функцию multiplyByTwo, которая принимает целое число и возвращает его, умноженное на 2.
 
-fun multiplyByTwo(number: Int): Int {
-    return number * 2
-}
+fun multiplyByTwo(number: Int) = number * 2
 
 //12. Создайте функцию isEven, которая принимает целое число и возвращает true, если число чётное, и false в противном
 // случае.
 
-fun isEven(number: Int): Boolean {
-    return number % 2 == 0
-}
+fun isEven(number: Int) = number % 2 == 0
 
 //13. Напишите функцию printNumbersUntil, которая принимает целое число n и выводит на экран числа от 1 до n. Если число
 // n меньше 1, функция должна прекратить выполнение с помощью return без вывода сообщений.
