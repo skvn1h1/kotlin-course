@@ -44,3 +44,12 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### Local AI/agent files (must stay out of version control) ###
+AGENTS.md
+CLAUDE.md
+opencode.json
+opencode.jsonc
+.opencode/
+.cursor/rules/
+.github/copilot-instructions.md
